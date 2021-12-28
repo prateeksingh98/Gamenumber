@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Guessing Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="headerh1">Guess My Number</h1>
+      <p class="between">Choose number between 1 to 20</p>
+      <button class="btn again">AGAIN</button>
+      <div class="number">?</div>
+      <button class="btn reset">RESET</button>
+      <button class="btn rules">Game Rules</button>
+
+      <!-- new window in the game -->
+      <div class="rule hidden">
+        <button class="close-rules">&times;</button>
+        <h1 class="headerrule">
+          Hello Firands <br /><br />
+          here are some "RULES" for this Game
+        </h1>
+        <p class="rules-Window">
+          Choose the number between 1 to 20.
+          <br /><br />
+          Not more than 20.
+          <br /><br />
+          Cheating is fully allowed.
+          <br /><br />
+          You can apply your reservation quota here.😂
+        </p>
+      </div>
+      <div class="overlay hidden"></div>
+    </header>
+
+    <!-- main section code starts from here -->
+    <main>
+      <section class="left">
+        <input type="number" class="guess" />
+        <button class="btn check">CHECK</button>
+      </section>
+
+      <section class="right">
+        <p class="message">Start Guessing...</p>
+        <p class="label-score">Score: <span class="score">20</span></p>
+        <p class="label-highscore">
+          Highscore: <span class="highscore">0</span>
+        </p>
+      </section>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
